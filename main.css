@@ -72,9 +72,15 @@
 }
 
 #user-hit-container, #computer-hit-container{
-  border: 2px solid purple;
-  width: 25%;
+  border: 1px solid black;
+  width: auto;
   height: auto;
+  display: flex;
+  min-width: 25%;
+}
+
+.hit-contienr{
+  width: auto;
 }
 
 .battlefield{
@@ -91,6 +97,11 @@
   order: 2;
 }
 
+.poke-pick img{
+  width: 150px;
+  height: 150px;
+}
+
 #user-hit-container{
   display: flex;
   flex-direction: column;
@@ -98,16 +109,22 @@
 }
 
 #user-poke-name, #computer-poke-name{
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
   height: 25%;
   width: auto;
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  padding: 50% 32px 0 19px;
 }
 
 .hit-counter{
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
   height: 50%;
   width: auto;
   display: flex;
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+  padding: 20% 0 0 32%;
 }
 
 #computer-hit-container{
@@ -124,12 +141,6 @@
 #computer-field{
   background-color: #379949;
   display: flex;
-}
-
-.poke-pick{
-  border: 2px solid black;
-  width: 100px;
-  height: 100px;
 }
 
 /*ABILITY DISPLAY STARTS*/
