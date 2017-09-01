@@ -3,54 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>Pokemon Battle</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
   </head>
   <body>
-    <div id="stadium-container">
-      <div id="user-field" class="poke-field">
-        <div id="user-poke-container" class="battlefield">
-          <div id="user-poke-img" class="poke-pick">
-            <!-- api img input -->
-            <img src="" alt="user poke image" id="user-poke-style-image">
+    <main id="gameboard">
+      <div id="pokeball">
+        <div id="top-ball"></div>
+        <div id="bottom-ball"></div>
+        <div id="circle-bottom"></div>
+        <div id="circle-top"></div>
+      </div>
+      <div id="stadium-container">
+        <div id="user-field" class="poke-field">
+          <div id="user-poke-container" class="battlefield">
+            <div id="user-poke-img" class="poke-pick">
+              <!-- api img input -->
+              <img src="" alt="" id="user-poke-style-image">
+            </div>
+          </div>
+          <div id="user-hit-container">
+            <div id="user-poke-name">
+              <!-- api name input -->
+            </div>
+            <p id="user-hits" class="hit-counter">
+              <!-- intial 50 | updated through backend -->
+            </p>
           </div>
         </div>
-        <div id="user-hit-container">
-          <div id="user-poke-name">
-            <!-- api name input -->
+        <div id="computer-field" class="poke-field">
+          <div id="computer-poke-container" class="battlefield">
+            <div id="computer-poke-img" class="poke-pick">
+              <!-- api img input -->
+              <img src="" alt="" id="computer-poke-style-image">
+            </div>
           </div>
-          <div id="user-hits" class="hit-counter"></div>
+          <div id="computer-hit-container">
+            <div id="computer-poke-name">
+              <!-- api name input -->
+            </div>
+            <p id="computer-hits" class="hit-counter">
+              <!-- intial 50 | updated through backend -->
+            </p>
+          </div>
         </div>
       </div>
-      <div id="computer-field" class="poke-field">
-        <div id="computer-poke-container" class="battlefield">
-          <div id="computer-poke-img" class="poke-pick">
-            <!-- api img input -->
-            <img src="" alt="computer poke image" id="computer-poke-style-image">
-          </div>
-        </div id="computer-hit-container">
-        <div id="computer-poke-name">
-            <!-- api name input -->
-        </div>
-        <div id="computer-hits" class="hit-counter"></div>
-      </div>
-    </div>
 
-    <h2 id="ability-display">
-      <!-- api ability input -->
-    </h2>
+      <h2 id="ability-display">
+        <!-- api ability input -->POKEMON USED ABILITY!
+      </h2>
 
-    <form id="poke-form">
-      <div id="poke-input">
-        <input type="text" name="poke-name">
-      </div>
-      <div id="poke-buttons">
-        <div>
-          <button id="random-button">Random</button>
+      <form id="poke-form">
+        <div id="poke-input">
+          <input type="text" name="poke-name" placeholder="Enter a Pokemon's name or Number">
         </div>
-        <div>
-          <button id="submit-button">Submit</button>
+        <div id="poke-buttons">
+          <div>
+            <button type="button" id="random-button">Random</button>
+          </div>
+          <div>
+            <button type="submit" id="submit-button">Submit</button>
+          </div>
         </div>
-      </div>
-    </form>
+        <div id="attack-button-container">
+          <button id="attack-button">ATTACK!</button>
+        </div>
+      </form>
+
+      <script src="app.js" charset="utf-8"></script>
+    </main>
   </body>
 </html>
