@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon Battle</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="stadium-container">
+      <div id="user-field" class="poke-field">
+        <div id="user-poke-container" class="battlefield">
+          <div id="user-poke-img" class="poke-pick">
+            <!-- api img input -->
+            <img src="" alt="user poke image" id="user-poke-style-image">
+          </div>
+        </div>
+        <div id="user-hit-container">
+          <div id="user-poke-name">
+            <!-- api name input -->
+          </div>
+          <div id="user-hits" class="hit-counter"></div>
+        </div>
+      </div>
+      <div id="computer-field" class="poke-field">
+        <div id="computer-poke-container" class="battlefield">
+          <div id="computer-poke-img" class="poke-pick">
+            <!-- api img input -->
+            <img src="" alt="computer poke image" id="computer-poke-style-image">
+          </div>
+        </div id="computer-hit-container">
+        <div id="computer-poke-name">
+            <!-- api name input -->
+        </div>
+        <div id="computer-hits" class="hit-counter"></div>
+      </div>
+    </div>
+
+    <h2 id="ability-display">
+      <!-- api ability input -->
+    </h2>
+
+    <form id="poke-form">
+      <div id="poke-input">
+        <input type="text" name="poke-name">
+      </div>
+      <div id="poke-buttons">
+        <div>
+          <button id="random-button">Random</button>
+        </div>
+        <div>
+          <button id="submit-button">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
